@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black"
+    tools:context=".MainActivity"
+    tools:ignore="HardcodedText">
+
+    <ImageView
+        android:id="@+id/img_cat"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginHorizontal="100dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription"
+        tools:src="@drawable/ic_launcher_background" />
+
+    <EditText
+        android:id="@+id/et_num"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="@string/number"
+        android:inputType="number"
+        android:textColorHint="@color/white"
+        android:backgroundTint="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/img_cat"
+        tools:ignore="Autofill,TextFields" />
+
+    <Button
+        android:id="@+id/btn_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#E17D00"
+        android:text="Кнопка" />
+
+</LinearLayout>
